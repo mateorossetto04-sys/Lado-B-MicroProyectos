@@ -91,6 +91,21 @@ button[data-testid="stBaseButton-primary"]:hover, button[data-testid="stBaseButt
 
 /* ---------- Campos ---------- */
 .stTextInput input, .stTextArea textarea, [data-baseweb="select"] > div { border-radius:14px !important; border:1.5px solid var(--v200) !important; background:#fff !important; transition:all .2s; }
+/* Texto siempre oscuro sobre fondo claro, aunque el dispositivo esté en modo oscuro */
+.stTextInput input, .stTextArea textarea, [data-baseweb="select"] * { color:var(--ink) !important; -webkit-text-fill-color:var(--ink) !important; caret-color:var(--v600); }
+.stTextInput input::placeholder, .stTextArea textarea::placeholder { color:#8B87A8 !important; -webkit-text-fill-color:#8B87A8 !important; opacity:1; }
+.stApp p, .stApp label, .stApp li, .stApp h1, .stApp h2, .stApp h3, .stApp [data-testid="stCaptionContainer"] { color:var(--ink); }
+.stApp .hero p, .stApp .hero .titulo, .stApp .hero .sub { color:#fff; }
+.stApp .hero .titulo span { color:var(--y400); }
+.stApp .hero .sub { color:#E9E3FF; }
+.stApp .nota, .stApp .meta { color:var(--muted); }
+.stApp .paso { color:var(--muted); } .stApp .paso.activo { color:var(--v900); }
+button[data-testid="stBaseButton-secondary"], button[data-testid="stBaseButton-secondaryFormSubmit"] { background:#fff !important; color:var(--v700) !important; }
+button[data-testid="stBaseButton-secondary"] p { color:var(--v700) !important; }
+[data-baseweb="input"], [data-baseweb="textarea"], [data-baseweb="base-input"] { background:#fff !important; border-color:var(--v200) !important; border-radius:14px !important; }
+.stButton > button { border:1.5px solid var(--v200) !important; }
+button[data-testid="stBaseButton-primary"] p, button[data-testid="stBaseButton-primaryFormSubmit"] p { color:inherit !important; }
+[data-testid="stRadio"] label p, [data-testid="stSelectSlider"] * { color:var(--ink); }
 .stTextInput input:focus, .stTextArea textarea:focus { border-color:var(--v500) !important; box-shadow:0 0 0 4px rgba(124,58,237,.15) !important; }
 [data-testid="stForm"] { border:1px solid var(--v200); border-radius:20px; background:#fff; padding:1.1rem; box-shadow:0 4px 14px -8px rgba(91,33,182,.25); }
 .stTextInput label, .stTextArea label, .stRadio label, .stSelectSlider label, .stMultiSelect label { font-weight:600; color:var(--v900); }
